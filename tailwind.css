@@ -79,3 +79,23 @@
 @utility corner-round {
   corner-shape: round;
 }
+
+@layer components {
+  [data-subnav] {
+    interpolate-size: allow-keywords;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition:
+      height 0.1s ease-in-out,
+      visibility 0s 0.1s;
+  }
+
+  [data-has-subnav][aria-expanded="true"] + [data-subnav] {
+    height: auto;
+    visibility: visible;
+    transition:
+      height 0.3s var(--ease-spring),
+      visibility 0s;
+  }
+}

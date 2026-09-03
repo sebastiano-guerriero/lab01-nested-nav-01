@@ -52,28 +52,32 @@
                   </svg>
                 </a>
 
-                <ul data-subnav inert>
-                  <li>
-                    <a href="#0" class="group h-9 rounded-xl flex items-center pl-[18px] pr-[14px] gap-4 hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                      <span class="size-1.5 rounded-full corner-round bg-contrast-high/20"></span>
-                      <span>Tasks</span>
-                    </a>
-                  </li>
+                <div data-subnav inert class="relative">
+                  <ul class="flex flex-col gap-px">
+                    <li class="mt-px">
+                      <a href="#0" class="group h-9 rounded-xl flex items-center pl-[18px] pr-[14px] gap-4 hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
+                        <span class="size-1.5 rounded-full corner-round bg-contrast-high/20"></span>
+                        <span>Tasks</span>
+                      </a>
+                    </li>
+  
+                    <li>
+                      <a href="#0" class="group h-9 rounded-xl flex items-center pl-[18px] pr-[14px] gap-4 hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
+                        <span class="size-1.5 rounded-full corner-round bg-contrast-high/20"></span>
+                        <span>Meetings</span>
+                      </a>
+                    </li>
+  
+                    <li>
+                      <a href="#0" class="group h-9 rounded-xl flex items-center pl-[18px] pr-[14px] gap-4 hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
+                        <span class="size-1.5 rounded-full corner-round bg-contrast-high/20"></span>
+                        <span>Calls</span>
+                      </a>
+                    </li>
+                  </ul>
 
-                  <li>
-                    <a href="#0" class="group h-9 rounded-xl flex items-center pl-[18px] pr-[14px] gap-4 hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                      <span class="size-1.5 rounded-full corner-round bg-contrast-high/20"></span>
-                      <span>Meetings</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#0" class="group h-9 rounded-xl flex items-center pl-[18px] pr-[14px] gap-4 hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                      <span class="size-1.5 rounded-full corner-round bg-contrast-high/20"></span>
-                      <span>Calls</span>
-                    </a>
-                  </li>
-                </ul>
+                  <div data-bar class="w-2.5 h-(--bar-height) rounded-full corner-round bg-contrast-high/10 absolute left-4 top-[14px] pointer-events-none"></div>
+                </div>
               </li>
 
               <li>

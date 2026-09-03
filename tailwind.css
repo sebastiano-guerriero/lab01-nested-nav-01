@@ -80,6 +80,12 @@
   corner-shape: round;
 }
 
+@property --bar-height {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 10px;
+}
+
 @layer components {
   [data-subnav] {
     interpolate-size: allow-keywords;
@@ -91,11 +97,28 @@
       visibility 0s 0.1s;
   }
 
+  [data-subnav] > * {
+    min-height: 0;
+  }
+
   [data-has-subnav][aria-expanded="true"] + [data-subnav] {
     height: auto;
     visibility: visible;
     transition:
       height 0.3s var(--ease-spring),
       visibility 0s;
+  }
+
+  [data-bar] {
+    --bar-height: 10px;
+    opacity: 0;
+    transition: opacity 200ms var(--ease-in-out);
+  }
+
+  [data-bar][data-visible] {
+    opacity: 1;
+    transition:
+      --bar-height 200ms var(--ease-in-out),
+      opacity 200ms var(--ease-in-out);
   }
 }

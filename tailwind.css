@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 @layer base {
@@ -33,9 +34,12 @@
 }
 
 @theme {
-  --font-primary: ui-sans-serif, system-ui, sans-serif;
+  --font-primary: Inter, ui-sans-serif, system-ui, sans-serif;
 
   --color-black: #000000;
+  --color-contrast-low: #79808B;
+  --color-contrast-high: #F8F8FA;
+  --color-primary: #2684FC;
 
   --shadow-intensity: 1;
   --shadow-2xs: 0px 1px 0px oklch(from var(--color-black) l c h / calc(0.075 * var(--shadow-intensity)));

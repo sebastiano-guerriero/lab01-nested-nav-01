@@ -1,4 +1,12 @@
 import "./tailwind.css";
+import { definePatch } from "@web-kits/audio";
+import minimal from "./.web-kits/minimal.json";
+
+const sounds = definePatch(minimal);
+
+document.querySelector("[data-plus]")?.addEventListener("click", () => {
+  sounds.play("swoosh");
+});
 
 const nav = document.querySelector("nav");
 const dotOffsets = ["0px", "37px", "74px"];
@@ -32,6 +40,8 @@ const syncDot = (subnav) => {
     dot.setAttribute("data-visible", "");
     return;
   }
+
+  if (dot.style.translate === offset) return;
 
   dot.removeAttribute("data-instant");
   dot.style.translate = offset;
@@ -99,6 +109,7 @@ document.querySelectorAll("[data-has-subnav]").forEach((trigger) => {
 
   trigger.addEventListener("click", (event) => {
     event.preventDefault();
+    sounds.play("pop");
     setOpen(trigger.getAttribute("aria-expanded") !== "true");
   });
 });
@@ -108,6 +119,7 @@ nav?.addEventListener("click", (event) => {
   if (!item || item.hasAttribute("data-has-subnav")) return;
 
   event.preventDefault();
+  sounds.play("tap");
   nav.querySelectorAll("[data-current]").forEach((current) => {
     current.removeAttribute("data-current");
   });

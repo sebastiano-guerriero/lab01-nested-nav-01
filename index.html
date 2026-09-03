@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <main class="flex items-center justify-center min-h-screen font-primary">
+    <main class="flex items-center justify-center min-h-screen font-primary bg-black">
       <div data-name="frame" class="relative size-135 bg-[#1F1F1F] isolate overflow-hidden flex text-[13px] font-medium text-contrast-high">
         <aside class="w-[256px] shrink-0">
           <header class="flex items-center justify-between p-5">
@@ -16,7 +16,7 @@
               </g>
             </svg>
 
-            <button class="size-7 text-contrast-high flex bg-[#333333] rounded-xl [box-shadow:0px_0px_0px_1px_rgba(15,15,15,0.3),0px_13px_5px_rgba(0,0,0,0.02),0px_7px_4px_rgba(0,0,0,0.07),0px_3px_3px_rgba(0,0,0,0.13),0px_1px_2px_rgba(0,0,0,0.15),inset_0px_0px_2px_rgba(255,255,255,0.08),inset_0px_-2px_0px_rgba(0,0,0,0.3),inset_0px_1px_0px_rgba(255,255,255,0.1)]">
+            <button data-plus class="size-7 text-contrast-high flex bg-[#333333] rounded-xl [box-shadow:0px_0px_0px_1px_rgba(15,15,15,0.3),0px_13px_5px_rgba(0,0,0,0.02),0px_7px_4px_rgba(0,0,0,0.07),0px_3px_3px_rgba(0,0,0,0.13),0px_1px_2px_rgba(0,0,0,0.15),inset_0px_0px_2px_rgba(255,255,255,0.08),inset_0px_-2px_0px_rgba(0,0,0,0.3),inset_0px_1px_0px_rgba(255,255,255,0.1)] active:translate-y-px">
               <svg class="m-auto size-3" viewBox="0 0 12 12">
                 <title>Create new</title>
                 <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
@@ -80,7 +80,7 @@
                   <div data-bar class="w-2.5 h-(--bar-height) rounded-full corner-round bg-contrast-high/10 absolute left-4 top-[14px] pointer-events-none"></div>
 
                   <!-- dot -->
-                  <div data-dot class="size-1.5 rounded-full bg-primary corner-round absolute left-[18px] top-4 pointer-events-none"></div>
+                  <div data-dot class="size-1.5 rounded-full bg-primary shadow-[0_0_10px_var(--color-primary)]/85 inset-shadow-2xs inset-shadow-white/25 corner-round absolute left-[18px] top-4 pointer-events-none"></div>
                 </div>
               </li>
 
@@ -137,7 +137,16 @@
           </nav>
         </aside>
 
-        <main class="bg-[#303030] w-[444px] shrink-0 min-w-0 h-[600px] mt-3 rounded-2xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.07),_0px_73px_29px_rgba(0,0,0,0.01),_0px_41px_24px_rgba(0,0,0,0.05),_0px_18px_18px_rgba(0,0,0,0.09),_0px_5px_10px_rgba(0,0,0,0.1),_inset_0px_1px_0px_rgba(255,255,255,0.07),_inset_0px_0px_0px_1px_rgba(255,255,255,0.05)]"></main>
+        <main class="bg-[#303030] w-[444px] shrink-0 min-w-0 h-[600px] mt-3 rounded-2xl shadow-[0px_0px_0px_1px_rgba(0,0,0,0.07),_0px_73px_29px_rgba(0,0,0,0.01),_0px_41px_24px_rgba(0,0,0,0.05),_0px_18px_18px_rgba(0,0,0,0.09),_0px_5px_10px_rgba(0,0,0,0.1),_inset_0px_1px_0px_rgba(255,255,255,0.07),_inset_0px_0px_0px_1px_rgba(255,255,255,0.05)] p-1">
+          <div class="relative">
+            <input type="text" class="w-[440px] bg-[#1F1F1F] rounded-xl h-9 focus:outline-none pl-10 shadow-[0px_1px_0px_rgba(211,221,238,0.1),inset_0px_1px_1px_rgba(0,0,0,0.25)]">
+      
+            <svg class="absolute size-4.5 left-3 top-1/2 -translate-y-1/2 text-contrast-low pointer-events-none" viewBox="0 0 18 18">
+              <title>magnifier</title>
+              <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M15.75 15.75L11.6386 11.6386"></path> <path d="M7.75 13.25C10.7875 13.25 13.25 10.7875 13.25 7.75C13.25 4.7125 10.7875 2.25 7.75 2.25C4.7125 2.25 2.25 4.7125 2.25 7.75C2.25 10.7875 4.7125 13.25 7.75 13.25Z"></path></g>
+            </svg>
+          </div>
+        </main>
   
       </div>
     </main>
@@ -145,4 +154,5 @@
     <script type="module" src="/main.js"></script>
   </body>
 </html>
+
 

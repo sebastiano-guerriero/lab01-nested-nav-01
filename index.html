@@ -39,7 +39,7 @@
                 </a>
               </li>
 
-              <li>
+              <li class="relative">
                 <a data-has-subnav aria-expanded="false" href="#0" class="relative group h-9 rounded-full flex items-center pl-[21px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
                   <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
                     <title>folder-check</title>
@@ -87,6 +87,13 @@
                     </li>
                   </ul>
                 </div>
+
+                <!-- filling hover effect -->
+                <div data-filling-fx class="absolute left-3 top-[26px] w-px h-0 bg-[#79808B] pointer-events-none"></div>
+                <!-- curved hover indicator -->
+                <svg data-curved-hover-indicator class="absolute left-3 top-0 pointer-events-none" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 0C0.5 4.41828 4.08172 8 8.5 8" stroke="#79808B" />
+                </svg>
               </li>
 
               <li>

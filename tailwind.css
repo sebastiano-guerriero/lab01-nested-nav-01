@@ -113,6 +113,36 @@
     transition: scale 0.3s var(--ease-spring);
   }
 
+  [data-filling-fx] {
+    opacity: 0;
+    transition: opacity 200ms var(--ease-in-out);
+  }
+
+  [data-filling-fx][data-visible] {
+    opacity: 1;
+  }
+
+  [data-filling-fx][data-visible]:not([data-instant]) {
+    transition:
+      height 200ms var(--ease-in-out),
+      opacity 200ms var(--ease-in-out);
+  }
+
+  [data-curved-hover-indicator] {
+    opacity: 0;
+    transition: opacity 200ms var(--ease-in-out);
+  }
+
+  [data-curved-hover-indicator][data-visible] {
+    opacity: 1;
+  }
+
+  [data-curved-hover-indicator][data-visible]:not([data-instant]) {
+    transition:
+      translate 200ms var(--ease-in-out),
+      opacity 200ms var(--ease-in-out);
+  }
+
   [data-dot] {
     opacity: 0;
     transition: opacity 200ms var(--ease-in-out);
@@ -133,6 +163,10 @@
     [data-has-subnav][aria-expanded="true"] + [data-subnav],
     [data-line],
     [data-has-subnav][aria-expanded="true"] + [data-subnav] [data-line],
+    [data-filling-fx],
+    [data-filling-fx][data-visible]:not([data-instant]),
+    [data-curved-hover-indicator],
+    [data-curved-hover-indicator][data-visible]:not([data-instant]),
     [data-dot],
     [data-dot][data-visible]:not([data-instant]) {
       transition: none;

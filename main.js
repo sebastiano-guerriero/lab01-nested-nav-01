@@ -50,9 +50,84 @@ document.querySelectorAll("[data-has-subnav]").forEach((trigger) => {
 
   if (!subnav) return;
 
+  const parent = trigger.parentElement;
+  const indicator = parent?.querySelector("[data-curved-hover-indicator]");
+  const filling = parent?.querySelector("[data-filling-fx]");
+  const curveEndY = 8;
+
+  const commitTransition = (el, property) => {
+    el.getAnimations().forEach((animation) => {
+      if (animation.transitionProperty === property) {
+        animation.commitStyles();
+        animation.cancel();
+      }
+    });
+  };
+
+  const hideHoverFx = () => {
+    if (indicator) {
+      commitTransition(indicator, "translate");
+      indicator.setAttribute("data-instant", "");
+      indicator.removeAttribute("data-visible");
+    }
+
+    if (filling) {
+      commitTransition(filling, "height");
+      filling.setAttribute("data-instant", "");
+      filling.removeAttribute("data-visible");
+    }
+  };
+
+  const alignHoverFx = (item) => {
+    if (!parent) return;
+
+    const parentRect = parent.getBoundingClientRect();
+    const itemRect = item.getBoundingClientRect();
+    const offset = itemRect.top + itemRect.height / 2 - parentRect.top - curveEndY;
+
+    if (indicator) {
+      const translate = `0 ${offset}px`;
+      const isVisible = indicator.hasAttribute("data-visible");
+
+      if (!isVisible) {
+        indicator.setAttribute("data-instant", "");
+        indicator.style.translate = translate;
+        indicator.offsetHeight;
+        indicator.setAttribute("data-visible", "");
+      } else if (indicator.style.translate !== translate) {
+        indicator.removeAttribute("data-instant");
+        indicator.style.translate = translate;
+      }
+    }
+
+    if (filling) {
+      const height = `${Math.max(0, offset - filling.offsetTop)}px`;
+      const isVisible = filling.hasAttribute("data-visible");
+
+      if (!isVisible) {
+        filling.setAttribute("data-instant", "");
+        filling.style.height = height;
+        filling.offsetHeight;
+        filling.setAttribute("data-visible", "");
+      } else if (filling.style.height !== height) {
+        filling.removeAttribute("data-instant");
+        filling.style.height = height;
+      }
+    }
+  };
+
+  subnav.querySelectorAll(":scope > ul > li > a").forEach((item) => {
+    item.addEventListener("pointerenter", () => {
+      alignHoverFx(item);
+    });
+  });
+
+  subnav.addEventListener("pointerleave", hideHoverFx);
+
   const setOpen = (open) => {
     trigger.setAttribute("aria-expanded", String(open));
     subnav.toggleAttribute("inert", !open);
+    if (!open) hideHoverFx();
   };
 
   trigger.addEventListener("click", (event) => {

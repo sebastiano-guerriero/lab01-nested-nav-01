@@ -30,20 +30,28 @@
           <nav class="px-3 mt-5">
             <ul class="flex flex-col gap-px">
               <li>
-                <a data-current href="#0" class="group h-9 rounded-full flex items-center pl-[21px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
-                    <title>house-bolt</title>
-                    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M3.145 5.94999L8.395 1.96C8.753 1.688 9.248 1.688 9.605 1.96L14.855 5.94999C15.104 6.13899 15.25 6.434 15.25 6.746V14.25C15.25 15.355 14.355 16.25 13.25 16.25H4.75C3.645 16.25 2.75 15.355 2.75 14.25V6.746C2.75 6.433 2.896 6.13899 3.145 5.94999Z" fill="currentColor" fill-opacity="0.3" data-stroke="none" stroke="none"></path> <path d="M3.145 5.94999L8.395 1.96C8.753 1.688 9.248 1.688 9.605 1.96L14.855 5.94999C15.104 6.13899 15.25 6.434 15.25 6.746V14.25C15.25 15.355 14.355 16.25 13.25 16.25H4.75C3.645 16.25 2.75 15.355 2.75 14.25V6.746C2.75 6.433 2.896 6.13899 3.145 5.94999Z"></path> <path d="M9.917 10.25H7L9 7L8.083 9.75H11L9 13L9.917 10.25Z" fill="currentColor"></path></g>
+                <a data-current href="#0" class="relative group h-9 rounded-full flex items-center pl-[21px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/20 data-current:text-primary data-current:shadow-[0px_1px_0px_rgba(0,0,0,0.1),inset_0px_-1px_0px_rgba(164,211,255,0.12),inset_0px_1px_0px_rgba(165,211,255,0.18),inset_0px_0px_5px_rgba(188,223,255,0.15)]">
+                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0593 1.36322C9.43341 0.886573 8.56698 0.887417 7.94127 1.36281L2.69155 5.35259C2.25589 5.68345 2 6.19868 2 6.746V14.25C2 15.7692 3.23079 17 4.75 17H13.25C14.7692 17 16 15.7692 16 14.25V6.746C16 6.20009 15.7448 5.68398 15.3088 5.35287L10.0593 1.36322Z" fill="currentColor" fill-opacity="0.4" data-color="color-2"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.31725 6.32041C9.66244 6.48155 9.83199 6.87586 9.71149 7.23725L9.12369 9H11C11.2717 9 11.5222 9.14696 11.6547 9.38415C11.7873 9.62134 11.7811 9.91167 11.6387 10.1431L9.63874 13.3931C9.43909 13.7175 9.02793 13.8407 8.68275 13.6796C8.33756 13.5185 8.16801 13.1241 8.28851 12.7628L8.87631 11H7C6.72829 11 6.47783 10.853 6.34528 10.6159C6.21274 10.3787 6.21885 10.0883 6.36126 9.85693L8.36126 6.60693C8.56091 6.28249 8.97207 6.15926 9.31725 6.32041Z" fill="currentColor"></path>
                   </svg>
                   <span>Home</span>
+
+                  <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-clip-padding-only p-px">
+                    <span class="size-5 rounded-full bg-[#141C26]/70 absolute -left-2.5 top-1/2 -translate-y-1/2 blur-[3px]"></span>
+                    <span class="size-5 rounded-full bg-[#141C26]/70 absolute -right-2.5 top-1/2 -translate-y-1/2 blur-[3px]"></span>
+                  </span>
+
+                  <span class="hidden w-full h-full absolute top-0 left-1/2 -translate-x-1/2 bg-white rounded-full opacity-20 _mask-b-from-0% pointer-events-none mask-b-from-50% mask-b-to-50% group-data-current:block mix-blend-overlay" ></span>
                 </a>
               </li>
 
               <li class="relative">
                 <a data-has-subnav aria-expanded="false" href="#0" class="relative group h-9 rounded-full flex items-center pl-[21px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
-                    <title>folder-check</title>
-                    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M13.75 6.75C14.855 6.75 15.75 7.645 15.75 8.75V9.2373C14.9409 8.7691 14.002 8.5 13 8.5C9.96251 8.5 7.5 10.9623 7.5 14C7.5 14.3777 7.53873 14.7464 7.61142 15.1027C7.63599 15.2232 7.43297 15.25 7.31005 15.25H4.25C3.145 15.25 2.25 14.355 2.25 13.25V8.75C2.25 7.645 3.145 6.75 4.25 6.75H13.75Z" fill="currentColor" fill-opacity="0.3" data-stroke="none" stroke="none"></path> <path d="M2.25 8.75V4.75C2.25 3.645 3.145 2.75 4.25 2.75H6.201C6.808 2.75 7.381 3.025 7.761 3.498L8.364 4.25H13.75C14.855 4.25 15.75 5.145 15.75 6.25V8.51599"></path> <path d="M15.726 8.51599C15.609 7.52299 14.774 6.75 13.75 6.75H4.25C3.145 6.75 2.25 7.646 2.25 8.75V13.25C2.25 14.354 3.145 15.25 4.25 15.25H6.8766"></path> <path d="M13 10C10.7939 10 9 11.7944 9 14C9 16.2056 10.7939 18 13 18C15.2061 18 17 16.2056 17 14C17 11.7944 15.2061 10 13 10ZM15.3076 13.252L13.0576 15.752C12.9199 15.9048 12.7256 15.9942 12.5195 15.9996C12.5127 16.0001 12.5068 16.0001 12.5 16.0001C12.3018 16.0001 12.1104 15.9215 11.9697 15.7804L10.7197 14.5304C10.4267 14.2374 10.4267 13.7628 10.7197 13.4699C11.0127 13.177 11.4873 13.1769 11.7802 13.4699L12.4716 14.1608L14.1923 12.2482C14.4706 11.9416 14.9433 11.9162 15.2519 12.1925C15.5595 12.4698 15.5849 12.9439 15.3076 13.252Z" fill="currentColor" data-stroke="none" stroke="none"></path></g>
+                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18">
+                    <path d="M4.25 2C2.73079 2 1.5 3.23079 1.5 4.75V6.5H16.5V6.25C16.5 4.73079 15.2692 3.5 13.75 3.5H8.72395L8.34569 3.02827C7.82347 2.37825 7.03552 2 6.201 2H4.25Z" fill="currentColor"></path>
+                    <path d="M13 10C10.7939 10 9 11.7944 9 14C9 16.2056 10.7939 18 13 18C15.2061 18 17 16.2056 17 14C17 11.7944 15.2061 10 13 10ZM15.3076 13.252L13.0576 15.752C12.9199 15.9048 12.7256 15.9942 12.5195 15.9996C12.3213 15.9996 12.1104 15.9215 11.9697 15.7804L10.7197 14.5304C10.4267 14.2374 10.4267 13.7628 10.7197 13.4699C11.0127 13.177 11.4873 13.1769 11.7802 13.4699L12.4716 14.1608L14.1923 12.2482C14.4706 11.9416 14.9433 11.9162 15.2519 12.1925C15.5595 12.4698 15.5849 12.9439 15.3076 13.252Z" fill="currentColor"></path>
+                    <path d="M16.5 6.5H1.5V13.25C1.5 14.7692 2.73079 16 4.25 16H7.87589C7.63324 15.3799 7.5 14.7053 7.5 14C7.5 10.9661 9.96535 8.5 13 8.5C14.3289 8.5 15.5487 8.97292 16.5 9.75935V6.5Z" fill="currentColor" fill-opacity="0.4" data-color="color-2"></path>
                   </svg>
                   <span>Activities</span>
 
@@ -58,31 +66,38 @@
                   <ul class="flex flex-col gap-px">
                     <li class="mt-px">
                       <a href="#0" class="group h-9 rounded-full flex items-center pl-[30px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                        <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
-                          <title>house-bolt</title>
-                          <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M3.145 5.94999L8.395 1.96C8.753 1.688 9.248 1.688 9.605 1.96L14.855 5.94999C15.104 6.13899 15.25 6.434 15.25 6.746V14.25C15.25 15.355 14.355 16.25 13.25 16.25H4.75C3.645 16.25 2.75 15.355 2.75 14.25V6.746C2.75 6.433 2.896 6.13899 3.145 5.94999Z" fill="currentColor" fill-opacity="0.3" data-stroke="none" stroke="none"></path> <path d="M3.145 5.94999L8.395 1.96C8.753 1.688 9.248 1.688 9.605 1.96L14.855 5.94999C15.104 6.13899 15.25 6.434 15.25 6.746V14.25C15.25 15.355 14.355 16.25 13.25 16.25H4.75C3.645 16.25 2.75 15.355 2.75 14.25V6.746C2.75 6.433 2.896 6.13899 3.145 5.94999Z"></path> <path d="M9.917 10.25H7L9 7L8.083 9.75H11L9 13L9.917 10.25Z" fill="currentColor"></path></g>
+                        <svg class="size-4.5 text-contrast-low group-data-current:text-primary" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18">
+                          <path d="M5.25 2C3.73079 2 2.5 3.23079 2.5 4.75V14.25C2.5 15.7692 3.73079 17 5.25 17H12.75C14.2692 17 15.5 15.7692 15.5 14.25V4.75C15.5 3.23079 14.2692 2 12.75 2H5.25Z" fill="currentColor" fill-opacity="0.4" data-color="color-2"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2 6.65C12.5314 6.89853 12.5985 7.36863 12.35 7.7L8.60001 12.7C8.46432 12.8809 8.25424 12.991 8.02825 12.9995C7.80226 13.008 7.5845 12.9141 7.43558 12.7439L5.68558 10.7439C5.41282 10.4321 5.4444 9.95833 5.75613 9.68557C6.06786 9.4128 6.54168 9.44439 6.81444 9.75612L7.95516 11.0598L11.15 6.8C11.3985 6.46863 11.8686 6.40147 12.2 6.65Z" fill="currentColor"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 2.25C5.5 1.28379 6.28379 0.5 7.25 0.5H10.75C11.7162 0.5 12.5 1.28379 12.5 2.25C12.5 3.21621 11.7162 4 10.75 4H7.25C6.28379 4 5.5 3.21621 5.5 2.25Z" fill="currentColor"></path>
                         </svg>
-                        <span>Home</span>
+                        <span>Tasks</span>
                       </a>
                     </li>
   
                     <li>
                       <a href="#0" class="group h-9 rounded-full flex items-center pl-[30px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                        <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
-                          <title>house-bolt</title>
-                          <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M3.145 5.94999L8.395 1.96C8.753 1.688 9.248 1.688 9.605 1.96L14.855 5.94999C15.104 6.13899 15.25 6.434 15.25 6.746V14.25C15.25 15.355 14.355 16.25 13.25 16.25H4.75C3.645 16.25 2.75 15.355 2.75 14.25V6.746C2.75 6.433 2.896 6.13899 3.145 5.94999Z" fill="currentColor" fill-opacity="0.3" data-stroke="none" stroke="none"></path> <path d="M3.145 5.94999L8.395 1.96C8.753 1.688 9.248 1.688 9.605 1.96L14.855 5.94999C15.104 6.13899 15.25 6.434 15.25 6.746V14.25C15.25 15.355 14.355 16.25 13.25 16.25H4.75C3.645 16.25 2.75 15.355 2.75 14.25V6.746C2.75 6.433 2.896 6.13899 3.145 5.94999Z"></path> <path d="M9.917 10.25H7L9 7L8.083 9.75H11L9 13L9.917 10.25Z" fill="currentColor"></path></g>
+                        <svg class="size-4.5 text-contrast-low group-data-current:text-primary" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18">
+                          <path d="M6.75 1.5C5.78379 1.5 5 2.28379 5 3.25V14.75C5 15.7162 5.78379 16.5 6.75 16.5H11.25C12.2162 16.5 13 15.7162 13 14.75V3.25C13 2.28379 12.2162 1.5 11.25 1.5H6.75Z" fill="currentColor" fill-opacity="0.4" data-color="color-2"></path>
+                          <path d="M2.25 10.25C1.561 10.25 1 9.689 1 9C1 8.311 1.561 7.75 2.25 7.75C2.939 7.75 3.5 8.311 3.5 9C3.5 9.689 2.939 10.25 2.25 10.25Z" fill="currentColor"></path>
+                          <path d="M2.25 5.5C1.561 5.5 1 4.939 1 4.25C1 3.561 1.561 3 2.25 3C2.939 3 3.5 3.561 3.5 4.25C3.5 4.939 2.939 5.5 2.25 5.5Z" fill="currentColor"></path>
+                          <path d="M2.25 15C1.561 15 1 14.439 1 13.75C1 13.061 1.561 12.5 2.25 12.5C2.939 12.5 3.5 13.061 3.5 13.75C3.5 14.439 2.939 15 2.25 15Z" fill="currentColor"></path>
+                          <path d="M14.5 9C14.5 8.311 15.061 7.75 15.75 7.75C16.439 7.75 17 8.311 17 9C17 9.689 16.439 10.25 15.75 10.25C15.061 10.25 14.5 9.689 14.5 9Z" fill="currentColor"></path>
+                          <path d="M14.5 4.25C14.5 3.561 15.061 3 15.75 3C16.439 3 17 3.561 17 4.25C17 4.939 16.439 5.5 15.75 5.5C15.061 5.5 14.5 4.939 14.5 4.25Z" fill="currentColor"></path>
+                          <path d="M14.5 13.75C14.5 13.061 15.061 12.5 15.75 12.5C16.439 12.5 17 13.061 17 13.75C17 14.439 16.439 15 15.75 15C15.061 15 14.5 14.439 14.5 13.75Z" fill="currentColor"></path>
                         </svg>
-                        <span>Home</span>
+                        <span>Meetings</span>
                       </a>
                     </li>
   
                     <li>
                       <a href="#0" class="group h-9 rounded-full flex items-center pl-[30px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                        <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
-                          <title>house-bolt</title>
-                          <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M3.145 5.94999L8.395 1.96C8.753 1.688 9.248 1.688 9.605 1.96L14.855 5.94999C15.104 6.13899 15.25 6.434 15.25 6.746V14.25C15.25 15.355 14.355 16.25 13.25 16.25H4.75C3.645 16.25 2.75 15.355 2.75 14.25V6.746C2.75 6.433 2.896 6.13899 3.145 5.94999Z" fill="currentColor" fill-opacity="0.3" data-stroke="none" stroke="none"></path> <path d="M3.145 5.94999L8.395 1.96C8.753 1.688 9.248 1.688 9.605 1.96L14.855 5.94999C15.104 6.13899 15.25 6.434 15.25 6.746V14.25C15.25 15.355 14.355 16.25 13.25 16.25H4.75C3.645 16.25 2.75 15.355 2.75 14.25V6.746C2.75 6.433 2.896 6.13899 3.145 5.94999Z"></path> <path d="M9.917 10.25H7L9 7L8.083 9.75H11L9 13L9.917 10.25Z" fill="currentColor"></path></g>
+                        <svg class="size-4.5 text-contrast-low group-data-current:text-primary" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18">
+                          <path d="M6.57524 2C6.52591 2.2424 6.5 2.49324 6.5 2.75004V4.25004C6.5 6.31845 8.18066 8.00004 10.25 8.00004H12.75C13.8937 8.00004 14.9082 7.48788 15.5911 6.68643L16.0887 6.98476C16.2205 7.0645 16.3584 7.12942 16.5 7.17963V12.75C16.5 14.2692 15.2692 15.5 13.75 15.5H4.25C2.73079 15.5 1.5 14.2692 1.5 12.75V4.75C1.5 3.23079 2.73079 2 4.25 2H6.57524Z" fill="currentColor" fill-opacity="0.4" data-color="color-2"></path>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.75C0 14.3358 0.335786 14 0.75 14H17.25C17.6642 14 18 14.3358 18 14.75C18 15.1642 17.6642 15.5 17.25 15.5H0.75C0.335786 15.5 0 15.1642 0 14.75Z" fill="currentColor"></path>
+                          <path d="M17.6187 1.28814C17.3843 1.15534 17.0938 1.15924 16.8643 1.29884L14.9683 2.43594C14.8138 1.34504 13.8832 0.499939 12.75 0.499939H10.25C9.0093 0.500039 8 1.50984 8 2.75004V4.25004C8 5.49024 9.0093 6.50004 10.25 6.50004H12.75C13.8832 6.50004 14.8138 5.65494 14.9683 4.56404L16.8633 5.70024C16.982 5.77254 17.1162 5.80864 17.2505 5.80864C17.3775 5.80864 17.5044 5.77644 17.6187 5.71194C17.8541 5.57914 18 5.32914 18 5.05864V1.94144C18 1.67094 17.854 1.42094 17.6187 1.28814Z" fill="currentColor"></path>
                         </svg>
-                        <span>Home</span>
+                        <span>Calls</span>
                       </a>
                     </li>
                   </ul>
@@ -98,18 +113,11 @@
 
               <li>
                 <a href="#0" class="group h-9 rounded-full flex items-center pl-[21px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
-                    <title>robot-4</title>
-                    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
-                      <circle cx="6.75" cy="5" r=".75" stroke-width="0" fill="currentColor"></circle>
-                      <circle cx="11.25" cy="5" r=".75" stroke-width="0" fill="currentColor"></circle>
-                      <rect x="4.25" y="2.25" width="9.5" height="5.5" rx="2" ry="2"></rect>
-                      <line x1="9" y1="2.25" x2="9" y2=".75"></line>
-                      <path d="m5,10.25h8s-.3469,2.7751-.3469,2.7751c-.2303,1.8423-1.7964,3.2249-3.6531,3.2249h0c-1.8567,0-3.4228-1.3826-3.6531-3.2249l-.3469-2.7751Z" fill="currentColor" opacity=".3" stroke-width="0"></path>
-                      <path d="m5,10.25h8s-.3469,2.7751-.3469,2.7751c-.2303,1.8423-1.7964,3.2249-3.6531,3.2249h0c-1.8567,0-3.4228-1.3826-3.6531-3.2249l-.3469-2.7751Z"></path>
-                      <line x1="13" y1="10.25" x2="16" y2="13"></line>
-                      <line x1="2" y1="13" x2="5" y2="10.25"></line>
-                    </g>
+                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18">
+                    <path d="m11.75,1.5h-2v-.75c0-.4141-.3359-.75-.75-.75s-.75.3359-.75.75v.75h-2c-1.5166,0-2.75,1.2334-2.75,2.75v1.5c0,1.5166,1.2334,2.75,2.75,2.75h5.5c1.5166,0,2.75-1.2334,2.75-2.75v-1.5c0-1.5166-1.2334-2.75-2.75-2.75Z" fill="currentColor" opacity=".4" stroke-width="0" data-color="color-2"></path>
+                    <circle cx="6.75" cy="5" r="1" stroke-width="0" fill="currentColor"></circle>
+                    <circle cx="11.25" cy="5" r="1" stroke-width="0" fill="currentColor"></circle>
+                    <path d="m16.5068,12.4473l-3-2.75c-.0462-.0425-.0889-.0659-.1302-.0808-.115-.0681-.2404-.1165-.3766-.1165H5c-.1345,0-.2585.0469-.3724.1135-.0421.0154-.0859.0393-.1344.0837l-3,2.75c-.3057.2798-.3262.7544-.0459,1.0596.1475.1611.3496.2432.5527.2432.1816,0,.3633-.0649.5068-.1973l1.9291-1.7683.1666,1.3337c.2764,2.2129,2.167,3.8818,4.3975,3.8818s4.1211-1.6689,4.3975-3.8823l.1666-1.3333,1.9291,1.7683c.1436.1323.3252.1973.5068.1973.2031,0,.4053-.082.5527-.2432.2803-.3052.2598-.7798-.0459-1.0596Z" stroke-width="0" fill="currentColor"></path>
                   </svg>
                   <span>Agents</span>
                 </a>
@@ -117,20 +125,15 @@
 
               <li>
                 <a href="#0" class="group h-9 rounded-full flex items-center pl-[21px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
-                    <title>office-user</title>
-                    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
-                      <path d="m8.793,14.8516c.4032-1.1575,1.2114-2.084,2.2241-2.6704-.326-.48-.5171-1.0586-.5171-1.6812,0-1.6543,1.3457-3,3-3,.4478,0,.869.1052,1.251.282v-2.9021c0-.3848-.222-.7358-.569-.9019l-4.75-2.272c-.273-.1301-.59-.1301-.863,0L3.819,3.978c-.348.166-.569.5171-.569.9019v11.3701h5.4501c-.0867-.4629-.0655-.9438.0928-1.3984Z" fill="currentColor" opacity=".3" stroke-width="0"></path>
-                      <line x1="9" y1="7.25" x2="9" y2="6.75"></line>
-                      <line x1="6.25" y1="7.25" x2="6.25" y2="6.75"></line>
-                      <line x1="11.75" y1="7.25" x2="11.75" y2="6.75"></line>
-                      <line x1="9" y1="10.5" x2="9" y2="10"></line>
-                      <line x1="6.25" y1="10.5" x2="6.25" y2="10"></line>
-                      <line x1="7.9288" y1="16.25" x2="1.75" y2="16.25"></line>
-                      <path d="m3.25,16.25V4.88c0-.385.221-.736.569-.902l4.75-2.272c.273-.13.59-.13.863,0l4.75,2.272c.347.166.569.517.569.902v2.0847"></path>
-                      <circle cx="13.5" cy="10.5" r="1.5" stroke-width="0" fill="currentColor"></circle>
-                      <path d="m15.6011,17h-4.2021c-.4067,0-.7905-.1987-1.0273-.5317-.2324-.3276-.293-.7476-.1621-1.123.4883-1.4023,1.8105-2.3452,3.2905-2.3452s2.8022.9429,3.291,2.3457c.1304.375.0698.7949-.1626,1.1226-.2368.333-.6206.5317-1.0273.5317Z" stroke-width="0" fill="currentColor"></path>
-                    </g>
+                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18">
+                    <path d="m8.793,14.8516c.4032-1.1575,1.2114-2.084,2.2241-2.6704-.326-.48-.5171-1.0586-.5171-1.6812,0-1.6543,1.3457-3,3-3,.7715,0,1.4689.3008,2.001.781v-3.4011c0-.6694-.3906-1.2891-.9951-1.5786l-4.7515-2.2725c-.4795-.228-1.0288-.2275-1.5093.0005L3.4956,3.3013c-.605.2886-.9956.9082-.9956,1.5786v10.6201h-.75c-.4141,0-.75.3359-.75.75s.3359.75.75.75h7.2161c-.3429-.6638-.4207-1.4373-.1731-2.1484Z" fill="currentColor" opacity=".4" stroke-width="0" data-color="color-2"></path>
+                    <path d="m9,8c-.4141,0-.75-.3359-.75-.75v-.5c0-.4141.3359-.75.75-.75s.75.3359.75.75v.5c0,.4141-.3359.75-.75.75Z" stroke-width="0" fill="currentColor"></path>
+                    <path d="m6.25,8c-.4141,0-.75-.3359-.75-.75v-.5c0-.4141.3359-.75.75-.75s.75.3359.75.75v.5c0,.4141-.3359.75-.75.75Z" stroke-width="0" fill="currentColor"></path>
+                    <path d="m11.75,8c-.4141,0-.75-.3359-.75-.75v-.5c0-.4141.3359-.75.75-.75s.75.3359.75.75v.5c0,.4141-.3359.75-.75.75Z" stroke-width="0" fill="currentColor"></path>
+                    <path d="m9,11.25c-.4141,0-.75-.3359-.75-.75v-.5c0-.4141.3359-.75.75-.75s.75.3359.75.75v.5c0,.4141-.3359.75-.75.75Z" stroke-width="0" fill="currentColor"></path>
+                    <path d="m6.25,11.25c-.4141,0-.75-.3359-.75-.75v-.5c0-.4141.3359-.75.75-.75s.75.3359.75.75v.5c0,.4141-.3359.75-.75.75Z" stroke-width="0" fill="currentColor"></path>
+                    <path d="m15.6011,17h-4.2021c-.4067,0-.7905-.1987-1.0273-.5317-.2324-.3276-.293-.7476-.1621-1.123.4883-1.4023,1.8105-2.3452,3.2905-2.3452s2.8022.9429,3.291,2.3457c.1304.375.0698.7949-.1626,1.1226-.2368.333-.6206.5317-1.0273.5317Z" stroke-width="0" fill="currentColor"></path>
+                    <circle cx="13.5" cy="10.5" r="1.5" stroke-width="0" fill="currentColor"></circle>
                   </svg>
                   <span>Team</span>
                 </a>
@@ -138,9 +141,9 @@
 
               <li>
                 <a href="#0" class="group h-9 rounded-full flex items-center pl-[21px] pr-[14px] gap-2.5 select-none hover:bg-contrast-high/7 data-current:bg-primary/15 data-current:text-primary">
-                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" viewBox="0 0 18 18">
-                    <title>gear-2</title>
-                    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M9 14.5C12.0376 14.5 14.5 12.0376 14.5 9C14.5 5.96243 12.0376 3.5 9 3.5C5.96243 3.5 3.5 5.96243 3.5 9C3.5 12.0376 5.96243 14.5 9 14.5Z" fill="currentColor" fill-opacity="0.3" data-stroke="none" stroke="none"></path> <path d="M6.25 4.237L9 9"></path> <path d="M6.25 13.764L9 9"></path> <path d="M14.5 9H9"></path> <path d="M9 14.5C12.0376 14.5 14.5 12.0376 14.5 9C14.5 5.96243 12.0376 3.5 9 3.5C5.96243 3.5 3.5 5.96243 3.5 9C3.5 12.0376 5.96243 14.5 9 14.5Z"></path> <path d="M9 1.75V3.5"></path> <path d="M2.72101 5.375L4.23701 6.25"></path> <path d="M1.75 9H3.5"></path> <path d="M16.25 9H14.5"></path> <path d="M2.72101 12.625L4.23701 11.75"></path> <path d="M9 16.25V14.5"></path> <path d="M12.625 15.279L11.75 13.763"></path> <path d="M5.375 15.279L6.25 13.763"></path> <path d="M15.279 12.625L13.763 11.75"></path> <path d="M15.279 5.375L13.763 6.25"></path> <path d="M12.625 2.721L11.75 4.237"></path> <path d="M5.375 2.721L6.25 4.237"></path></g>
+                  <svg class="size-4.5 text-contrast-low group-data-current:text-primary" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18">
+                    <path opacity="0.4" d="M14.6295 4.14792L10.379 1.68313C9.52839 1.18993 8.47129 1.18993 7.61969 1.68313L3.37069 4.14792C2.52549 4.63812 2.00009 5.54982 2.00009 6.52682V11.4731C2.00009 12.4502 2.52549 13.3618 3.37069 13.852L7.62119 16.3168C8.04649 16.5634 8.5235 16.6864 9.0006 16.6864C9.4777 16.6864 9.95469 16.5634 10.3805 16.3168L14.6305 13.852C15.4767 13.3613 16.0016 12.4492 16.0001 11.4721V6.52682C16.0001 5.54972 15.4747 4.63812 14.6295 4.14792Z" fill="currentColor" data-color="color-2"></path>
+                    <path d="M9.00009 12C10.6569 12 12.0001 10.6569 12.0001 9C12.0001 7.34315 10.6569 6 9.00009 6C7.34324 6 6.00009 7.34315 6.00009 9C6.00009 10.6569 7.34324 12 9.00009 12Z" fill="currentColor"></path>
                   </svg>
                   <span>Settings</span>
                 </a>
@@ -181,8 +184,51 @@
       </div>
     </main>
 
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" focusable="false" class="absolute pointer-events-none">
+      <defs>
+        <filter id="progressive-blur" x="-0.5" y="-0.5" width="2" height="2" color-interpolation-filters="sRGB">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="b1" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5.75" result="b2" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10.5" result="b3" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="15.25" result="b4" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="b5" />
+
+          <feImage result="ramp" x="0%" y="0%" width="100%" height="100%" preserveAspectRatio="none" href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='256'%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop stop-color='black'/%3E%3Cstop offset='1' stop-color='white'/%3E%3C/linearGradient%3E%3Crect width='100%25' height='100%25' fill='url(%23g)'/%3E%3C/svg%3E" />
+          <feColorMatrix in="ramp" type="luminanceToAlpha" result="luma" />
+
+          <feComponentTransfer in="luma" result="m1">
+            <feFuncA type="table" tableValues="1 0 0 0 0" />
+          </feComponentTransfer>
+          <feComponentTransfer in="luma" result="m2">
+            <feFuncA type="table" tableValues="0 1 0 0 0" />
+          </feComponentTransfer>
+          <feComponentTransfer in="luma" result="m3">
+            <feFuncA type="table" tableValues="0 0 1 0 0" />
+          </feComponentTransfer>
+          <feComponentTransfer in="luma" result="m4">
+            <feFuncA type="table" tableValues="0 0 0 1 0" />
+          </feComponentTransfer>
+          <feComponentTransfer in="luma" result="m5">
+            <feFuncA type="table" tableValues="0 0 0 0 1" />
+          </feComponentTransfer>
+
+          <feComposite in="b1" in2="m1" operator="in" result="c1" />
+          <feComposite in="b2" in2="m2" operator="in" result="c2" />
+          <feComposite in="b3" in2="m3" operator="in" result="c3" />
+          <feComposite in="b4" in2="m4" operator="in" result="c4" />
+          <feComposite in="b5" in2="m5" operator="in" result="c5" />
+
+          <feMerge>
+            <feMergeNode in="c1" />
+            <feMergeNode in="c2" />
+            <feMergeNode in="c3" />
+            <feMergeNode in="c4" />
+            <feMergeNode in="c5" />
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
-
-

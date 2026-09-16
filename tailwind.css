@@ -173,3 +173,7 @@
     }
   }
 }
+
+@utility progressive-blur {
+  filter: url("#progressive-blur");
+}

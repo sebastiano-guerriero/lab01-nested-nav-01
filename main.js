@@ -4,10 +4,6 @@ import minimal from "./.web-kits/minimal.json";
 
 const sounds = definePatch(minimal);
 
-document.querySelector("[data-plus]")?.addEventListener("click", () => {
-  sounds.play("swoosh");
-});
-
 const nav = document.querySelector("nav");
 const dotOffsets = ["0px", "37px", "74px"];
 
@@ -54,62 +50,13 @@ document.querySelectorAll("[data-has-subnav]").forEach((trigger) => {
 
   if (!subnav) return;
 
-  const bar = subnav.querySelector("[data-bar]");
-  const barHeights = ["10px", "47px", "84px"];
-
-  const setBarHeight = (height) => {
-    bar?.style.setProperty("--bar-height", height);
-  };
-
-  const hideBar = () => {
-    if (!bar) return;
-
-    bar.getAnimations().forEach((animation) => {
-      if (animation.transitionProperty === "--bar-height") {
-        animation.commitStyles();
-        animation.cancel();
-      }
-    });
-
-    bar.setAttribute("data-instant", "");
-    bar.removeAttribute("data-visible");
-  };
-
-  const showBar = (index) => {
-    if (!bar) return;
-
-    const height = barHeights[index] ?? barHeights[0];
-    const isVisible = bar.hasAttribute("data-visible");
-
-    if (!isVisible) {
-      bar.setAttribute("data-instant", "");
-      setBarHeight(height);
-      bar.offsetHeight;
-      bar.setAttribute("data-visible", "");
-      return;
-    }
-
-    bar.removeAttribute("data-instant");
-    setBarHeight(height);
-  };
-
-  subnav.querySelectorAll(":scope > ul > li").forEach((item, index) => {
-    item.addEventListener("pointerenter", () => {
-      showBar(index);
-    });
-  });
-
-  subnav.addEventListener("pointerleave", hideBar);
-
   const setOpen = (open) => {
     trigger.setAttribute("aria-expanded", String(open));
     subnav.toggleAttribute("inert", !open);
-    if (!open) hideBar();
   };
 
   trigger.addEventListener("click", (event) => {
     event.preventDefault();
-    sounds.play("pop");
     setOpen(trigger.getAttribute("aria-expanded") !== "true");
   });
 });
@@ -119,12 +66,9 @@ nav?.addEventListener("click", (event) => {
   if (!item || item.hasAttribute("data-has-subnav")) return;
 
   event.preventDefault();
-  sounds.play("tap");
   nav.querySelectorAll("[data-current]").forEach((current) => {
     current.removeAttribute("data-current");
   });
   item.setAttribute("data-current", "");
   nav.querySelectorAll("[data-subnav]").forEach(syncDot);
 });
-
-
